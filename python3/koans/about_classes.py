@@ -10,8 +10,8 @@ class AboutClasses(Koan):
 
     def test_instances_of_classes_can_be_created_adding_parentheses(self):
         fido = self.Dog()
-        #self.assertEqual(Dog, fido.__class__)
-        self.assertRegexpMatches(str(fido.__class__), 'Dog')
+        #self.assertEqual(self.Dog, fido.__class__)
+        #self.assertRegexpMatches(str(fido.__class__), 'Dog')
 
     def test_classes_have_docstrings(self):
         self.assertRegexpMatches(self.Dog.__doc__, 'walkies')
